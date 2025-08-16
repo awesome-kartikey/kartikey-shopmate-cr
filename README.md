@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Shopmate - Simple Shopping Cart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic React application demonstrating a simple e-commerce shopping cart functionality using Context API and useReducer for state management.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Shopmate is a frontend-only web application that allows users to browse a list of products, add them to a shopping cart, view the cart contents, and remove items from the cart. It showcases fundamental React concepts including components, state management with Context API and reducers, routing, and custom hooks.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- View a list of available products on the Home page.
+- Add products to the shopping cart.
+- View items added to the cart on the Cart page.
+- See the total number of items and the total price in the cart.
+- Remove items from the cart (from both the Home page and the Cart page).
+- Dynamic page titles based on the current route.
+- Responsive header showing cart count.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend:** React.js (v18)
+- **Routing:** React Router DOM (v6)
+- **State Management:** React Context API & `useReducer` hook
+- **Styling:** Plain CSS
+- **Build Tool:** Create React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Instructions
 
-### `npm run build`
+1.  **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone <repository-url>
+    cd kartikey-shopmate-cr
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.  **Install dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+3.  **Run the application:**
+    ```bash
+    npm start
+    ```
+    This will start the development server, and you can view the application at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Navigate to the **Home** page (`/`) to see the list of products.
+2.  Click the "Add To Cart" button on a product card to add it to your shopping cart. The button will change to "Remove" if the item is in the cart.
+3.  Click the "Remove" button on a product card (on the Home page) or in the cart list (on the Cart page) to remove an item.
+4.  Click the **Cart** link in the header or navigate to (`/cart`) to view the items currently in your cart.
+5.  The header always displays the current number of items in the cart.
+6.  The Cart page displays the total price of all items in the cart.
